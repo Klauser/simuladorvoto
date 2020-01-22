@@ -54,14 +54,14 @@
 				<p class="text-center texto_inicio"><strong>Simulador Sistema De Voto Automatizado </strong></p>
 			</div>
 			<div class="col-12">
-				<p class="litle-text"><strong>Primarias Simultáneas Partidos Políticos 6 Octubre 2019<strong></p>
+				<p class="litle-text"><strong>Elecciones Ordinarias Generales Municipales 16 Febrero 2020<strong></p>
 			</div>
 		</div>
 
 		<div class="row text-center" style="display: flex; justify-content: space-between;">
 			
 			<div class="thumbnail" style="width: 10%;">
-				<img src="images/prm-logo.png" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
+				<img src="" id="logo-final" class="img-thumbnail" style="width: 100%; height: 100%; margin: 0px">
 			</div>
 		
 			<div class="barraDatos" style="width: 80%;">
@@ -113,6 +113,9 @@
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
 	<script>
 
+		
+		document.getElementById('logo-final').setAttribute('src', sessionStorage.getItem('imageSrcLp'))
+		
 		let retornar = document.getElementById('retornar')
 		document.getElementById('fotoCandidatoR').setAttribute('src', sessionStorage.getItem('imageScrR'))
 		document.getElementById('nombreR').innerText = sessionStorage.getItem('regidor')
